@@ -11,8 +11,13 @@ export const Button=(props)=>{
         <Row justify="center"> 
             <Col>
                 <ButtonAntd
-                    style={style}
-                    type={type}
+                    style={{
+                        width:200,
+                        color:Telegram.WebApp.themeParams.button_text_color,
+                        // color:'#FFF111',
+                        background:Telegram.WebApp.themeParams.button_color
+                    }}
+                    
                     
                 >
                     {title}
