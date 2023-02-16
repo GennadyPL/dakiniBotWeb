@@ -1,8 +1,7 @@
 
 import { Route, Routes } from "react-router-dom";
-import {Bar} from './Bar';
-import {Kitchen} from './Kitchen';
-import {Сhoice} from './Сhoice';
+
+import {MenuPages} from './MenuPages';
 
 
 export const Routing = ()=>{
@@ -11,9 +10,9 @@ export const Routing = ()=>{
         <>
         
             <Routes>
-                <Route path="/" element={<Сhoice/>} />
-                <Route path="/bar" element={<Bar/>} />
-                <Route path="/kitchen" element={<Kitchen/>} />
+                <Route path="/" element={<MenuPages/>} />
+                {/* <Route path="/bar" element={<Bar/>} />
+                <Route path="/kitchen" element={<Kitchen/>} /> */}
                 
             </Routes>
         </>
