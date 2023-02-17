@@ -1,5 +1,7 @@
 import { MailOutlined, SettingOutlined,AppstoreOutlined } from '@ant-design/icons';
-import { Menu } from 'antd';
+import { Menu as MenuAntd,Button } from 'antd';
+import {Menu} from '../../widgets/Menu'
+
 import {data} from '../../shared/data'
 function getItem(label, key, icon, children, type) {
   return {
@@ -41,11 +43,12 @@ items = Object.keys(data).map(item=>{
             // debugger;
                 
                 return getItem(item.name, item.name,null)
+                // return <Button>Dashed Button</Button>
             }))
         }));
 })
     // return getItem()
-
+// debugger;
 export const MenuPages = () => {
 
     // debugger;    
@@ -53,14 +56,19 @@ export const MenuPages = () => {
     console.log('click ', e);
   };
   return (
+    <>
     <Menu
-      onClick={onClick}
-      style={{
-        width: "100%",
-      }}
-      mode="inline"
       items={items}
     />
+    </>
+    // <MenuAntd
+    //   onClick={onClick}
+    //   style={{
+    //     width: "100%",
+    //   }}
+    //   mode="inline"
+    //   items={items}
+    // />
   );
 };
  
