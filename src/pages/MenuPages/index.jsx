@@ -60,15 +60,16 @@ export const MenuPages = () => {
     <Menu
       items={items}
     />
+    
+    <MenuAntd
+      onClick={onClick}
+      style={{
+        width: "100%",
+      }}
+      mode="inline"
+      items={items}
+      />
     </>
-    // <MenuAntd
-    //   onClick={onClick}
-    //   style={{
-    //     width: "100%",
-    //   }}
-    //   mode="inline"
-    //   items={items}
-    // />
   );
 };
  

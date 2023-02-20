@@ -9,16 +9,19 @@ export const Menu=(props)=>{
         items
       }=props;
 
-
+    //   debugger;
     return(
         <>
-            {items.map(item=>{
-                return(
+
+
                     <NodeMenu
-                        obj={item}
+                        key='ads'
+                        children={items}
+                        // node={item}
                     />
-                )
-            })}
+                    
+
+
         </>
     )
 }
